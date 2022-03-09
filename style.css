@@ -45,7 +45,6 @@ nav{
     background-color:rgb(253, 253, 253, 0.9);
     width:100%;
     height:65px;
-
     display:flex;
     flex-direction:row;
     box-shadow:1px 1px 2px rgb(0, 0, 0, 0.2);
@@ -57,8 +56,7 @@ nav{
 .nav-bar{
 
 }
-.nav-bar .nav-manu{
-    
+.nav-bar .nav-manu{   
     margin:25px 0 0 0px;
 }
 .nav-manu a{
@@ -397,24 +395,85 @@ a{
 
 /*responsive Codes starts here*/
 @media (max-width:992px){
+    body{
+        font-size:90%;
+    }
+    .nav{
+        width:100%;
+    }
+    .logo{
+        width:17%;
+        padding-bottom:5px;
+    }
+    .logo img{
+        margin:5px 0 0 30px;
+    }
+    .nav-bar{
+        width:50%;
+        margin-left:5px;
+    }
+    .search{
+        margin:15px 0 0 25px;  
+    }
+    .search input{
+        width:170px;
+    }
 
+    .header{
+        width:100%;
+        margin-left:0;
+        justify-content: center;
+        content:center;
+        margin:auto;
+        margin-top:5px;
+    }
+    .header-logo{
+        margin-top:20px;
+    }
+    .header-box{
+       margin-left:80px;
+        width:80%;
+    }
+    .header-box input{
+        width:95%;
+    }
+
+    .sidebar{
+        margin-left:0;
+        width:25%;;
+    }
+
+    .items{
+        margin-right:0;
+        margin-left:5px;
+    }
 }
 @media (max-width:768px){
     .logo img{
         margin:0;
         align-items:center;
     }
+    .nav{
+        height:80px;
+    }
     .nav-manu{
         display:none;
     }
+    .logo{
+        width:50%;
+    }
+    .logo img{
+        margin:10px 0 0 20px;
+        padding-bottom:20px;
+    }
     .search{
-        margin:30px 0 0 0px;
-        border-bottom-width: 100xp;
+        width:50%;
+        margin:30px 0 0 0;
         display:flex;
         flex-direction:row;
     }
     .search input{
-        width:100px;
+        width:180px;
     }
     .search button{
         margin:0 0 10px 0;
@@ -437,7 +496,7 @@ a{
     
     .header-search input{
         border:none;
-        width:275px;
+        width:470px;
         height:45px;
     }
     .des{
@@ -460,17 +519,21 @@ a{
     .nav-manu{
         display:none;
     }
+    .logo{
+        width:50%;
+        margin:10px 0 0 10px;
+    }
     .search{
-        margin:30px 0 0 0px;
+        width:50%;
+        margin-top:30px;
+        padding-right:5%;
         border-bottom-width: 100px;
-        display:flex;
-        flex-direction:row;
     }
     .search input{
-        width:100px;
+        width:180px;
     }
     .search button{
-        margin:0 0 10px 0;
+        margin:0 0 25px 0;
         padding:0px;
     }
     /*header starts Here*/
@@ -483,14 +546,14 @@ a{
     }
     .header-box{
         border:1px solid gray;
-        width:300px;
+        width:80%;
         margin-left:40px;
         box-shadow:1px 1px 2px rgb(0, 0, 0, 0.5);
     }
     
     .header-search input{
         border:none;
-        width:270px;
+        width:90%;
         height:45px;
     }
     .des{
@@ -523,24 +586,49 @@ a{
         width:100%;   
     }
     .items{
-        display:flex;
-        flex-direction:column;
         width:100%;
+        padding-left:0;
         margin-left:0;
         font-size:85%;
     }
-
+    .items h2{
+        padding-left:10px;
+    }
     .item{
-        margin:0px;
-        width:100%;
+        padding-left:5px;
+        margin:10px;
+        width:40%;
     }
 
     .image img{
         height:80%;
         width:80%;
     }
+    /*contacts*/
+    .form{
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .form-control{
+        display:flex;
+        align-items: center;
+        flex-direction:column;
+    }
+    .form-control .label{
+        display:flex;
+        align-items: center;
+        margin: auto;
+    }
+    .massage{
+        margin:20px;
+        
+    }
+    #massage{
+        margin-top:5px;
+    }
     footer{
-        width:90%;
+        width:89%;
         font-size:85%;
         margin-left:0;
     }
@@ -549,16 +637,18 @@ a{
 /*meda screen 400px*/
 @media (max-width:400px){
     .logo img{
-        margin:0;
+        margin:5px 0  0 10px;
     }
     nav{
-        z-index:10;
+        z-index: 5;
+        width:100%;
     } 
     .nav-manu{
         display:none;
     }
     .search{
-        margin:30px 0 0 0px;
+        margin-top:30px;
+        margin-right:3%;
         border-bottom-width: 100px;
         display:flex;
         flex-direction:row;
@@ -567,7 +657,7 @@ a{
         width:100px;
     }
     .search button{
-        margin:0 0 10px 0;
+        margin:0 0 25px 0;
         padding:0px;
     }
     /*header starts Here*/
@@ -577,16 +667,18 @@ a{
     }
     .header-logo{
         margin-left:100px;
+        margin-top:30px;
     }
     .header-box{
         border:1px solid gray;
-        width:300px;
-        margin-left:40px;
+        width:80%;
+        margin-left:10%;
         box-shadow:1px 1px 2px rgb(0, 0, 0, 0.5);
     }
+    
     .header-search input{
         border:none;
-        width:270px;
+        width:88%;
         height:45px;
     }
     .des{
@@ -599,6 +691,7 @@ a{
         width:95%;
         margin-left:0;
     }
+    
     .sidebar-manu a{
         display: flex;
         flex-direction: row;
@@ -620,9 +713,10 @@ a{
     .items{
         display:flex;
         flex-direction:column;
+        flex-wrap: wrap;
         align-items:center;
         padding-left:10px;
-        width:100%;
+        width:98%;
         font-size:85%;
     }
     .items hr{
@@ -630,12 +724,14 @@ a{
     }
     .item{
         margin:20px 7px 0 0;
-        width:45%;  
+        width:45%;
+        
     }
     .image img{
         height:60%;
         width:60%;
     }
+
     /*contacts starts here*/
     
     .form{
@@ -655,14 +751,16 @@ a{
     }
     .massage{
         margin:20px;
+        
     }
     #massage{
         margin-top:5px;
     }
     /*contacts ends here*/
     footer{
-        width:90%;
+        width:85%;
         font-size:85%;
         margin-left:0;
     }
+
 }
